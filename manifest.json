@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Relleno Trade Republic",
+    "version": "2.0",
+    "description": "Autocompleta el país y teléfono en Trade Republic.",
+    "permissions": ["scripting", "activeTab", "storage", "geolocation"],
+    "host_permissions": ["https://app.traderepublic.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://app.traderepublic.com/login*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "favicon.png"
+    },
+    "options_page": "options.html",
+    "icons": {
+      "128": "favicon.png"
+    }
+  }
+  

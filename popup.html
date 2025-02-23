@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Relleno - Trade Republic</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 15px;
+      background-color: #2e2e2e;
+      color: white;
+    }
+
+    body a{
+      color:white;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 8px 12px;
+      background-color: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #214abb;
+    }
+  </style>
+</head>
+<body>
+  <h1>Trade Republic Auto Relleno</h1>
+
+  <label>
+    <input type="checkbox" id="toggleGeolocation">
+    Usar geolocalización por IP
+  </label>
+
+  <p><strong>País por defecto:</strong> <span id="currentCountry">Cargando...</span></p>
+  <p><strong>Teléfono:</strong> <span id="currentPhone">Cargando...</span></p>
+
+  <button id="openOptions">Configuración</button>
+
+  <p><small>By SrVazquez & ChatGPT <a target="_blank" href="https://github.com/srvazquez/tr_prefill">Ver código fuente</a></small></p>
+  <p><small>Esta extensión no tiene ningún tipo de afiliación con Trade Republic &copy;</small></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
